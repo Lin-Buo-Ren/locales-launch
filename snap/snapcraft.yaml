@@ -13,6 +13,11 @@ description: |
 grade: stable
 confinement: strict
 
+# We only ship launcher here, don't do duplicate work
+architectures:
+- build-on: s390x
+  run-on: all
+
 parts:
   locales-launch:
     plugin: dump
