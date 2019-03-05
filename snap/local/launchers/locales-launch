@@ -12,6 +12,15 @@ set \
 	-o nounset \
 	-o pipefail
 
+if ! command -v localedef >/dev/null; then
+	printf -- \
+		"locale-launch: \"localedef\" command not found, you're probably not using the stage snap properly, refer the snapcraft forum topic for info on using this stage snap.\\n" \
+		>&2
+	printf -- \
+		"locale-launch: If you're an user of this application, contact the publisher that their packaging has an error.\\n" \
+		>&2
+fi
+
 export LOCPATH="${SNAP}"/usr/lib/locale
 
 if ! [ -d "${LOCPATH}"/en_US.utf8 ]; then
