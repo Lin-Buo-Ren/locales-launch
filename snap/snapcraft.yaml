@@ -15,6 +15,7 @@ grade: stable
 confinement: strict
 
 # We only ship launcher here, don't do duplicate work
+# Build on s390x architecture as the build machine is least busy
 architectures:
 - build-on: s390x
   run-on: all
