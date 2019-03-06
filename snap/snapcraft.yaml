@@ -9,6 +9,8 @@ description: |
     _topic_title_
     _topic_url_
 
+license: WTFPL
+
 base: core18
 version: git
 grade: stable
