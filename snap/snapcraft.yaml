@@ -1,4 +1,5 @@
 name: locales-launch
+title: The locales-launch Stage Snap
 base: core18
 version: git
 summary: A stage snap that fixes Glibc locales support
