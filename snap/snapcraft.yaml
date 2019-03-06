@@ -1,7 +1,5 @@
 name: locales-launch
 title: The locales-launch Stage Snap
-base: core18
-version: git
 summary: A stage snap that fixes Glibc locales support
 description: |
   This stage snap ships the `locales-launch` launcher and its dependencies to your snap, by incorporate this stage snap you can fix the Glibc locales support and allow applications that depend on it to work.
@@ -11,6 +9,8 @@ description: |
     _topic_title_
     _topic_url_
 
+base: core18
+version: git
 grade: stable
 confinement: strict
 
